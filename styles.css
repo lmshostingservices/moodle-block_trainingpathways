@@ -1,0 +1,170 @@
+/* ── Training Pathways Block styles ───────────────────────────────────────── */
+/* Scoped to .block_trainingpathways to prevent global leakage                */
+
+.block_trainingpathways .tp-block-card {
+    border: 1px solid #dee2e6;
+    border-radius: 7px;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 0.75rem;
+}
+.block_trainingpathways .tp-block-card:last-child {
+    margin-bottom: 0;
+}
+
+/* Colour stripe at top */
+.block_trainingpathways .tp-block-stripe {
+    height: 5px;
+}
+
+.block_trainingpathways .tp-block-body {
+    padding: 0.75rem;
+}
+
+/* Pathway name + status badge row */
+.block_trainingpathways .tp-block-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.4rem;
+    margin-bottom: 0.6rem;
+}
+.block_trainingpathways .tp-block-name {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #212529;
+    line-height: 1.3;
+    flex: 1;
+    min-width: 0;
+}
+.block_trainingpathways .tp-block-badge {
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 0.18em 0.55em;
+    border-radius: 999px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.block_trainingpathways .tp-block-badge.complete   { background: #d4edda; color: #155724; }
+.block_trainingpathways .tp-block-badge.active     { background: #fff3cd; color: #856404; }
+
+/* Progress bar */
+.block_trainingpathways .tp-block-progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+}
+.block_trainingpathways .tp-block-progress-label strong {
+    color: #343a40;
+}
+.block_trainingpathways .tp-block-progress-wrap {
+    background: #e9ecef;
+    border-radius: 999px;
+    height: 10px;
+    overflow: hidden;
+    margin-bottom: 0.6rem;
+}
+.block_trainingpathways .tp-block-progress-bar {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.4s ease;
+}
+
+/* Stage mini-list */
+.block_trainingpathways .tp-block-stages {
+    margin: 0 0 0.65rem 0;
+    padding: 0;
+    list-style: none;
+}
+.block_trainingpathways .tp-block-stage-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0;
+    font-size: 0.78rem;
+    color: #495057;
+    border-bottom: 1px solid #f0f0f0;
+}
+.block_trainingpathways .tp-block-stage-row:last-child {
+    border-bottom: none;
+}
+.block_trainingpathways .tp-block-stage-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.block_trainingpathways .tp-block-stage-dot.complete   { background: #2e7d32; }
+.block_trainingpathways .tp-block-stage-dot.inprogress { background: #f9a825; }
+.block_trainingpathways .tp-block-stage-dot.notstarted { background: #ced4da; }
+.block_trainingpathways .tp-block-stage-name {
+    flex: 1;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.block_trainingpathways .tp-block-stage-count {
+    font-size: 0.72rem;
+    color: #868e96;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Target date */
+.block_trainingpathways .tp-block-target {
+    font-size: 0.75rem;
+    margin-bottom: 0.6rem;
+}
+.block_trainingpathways .tp-block-target.overdue { color: #c62828; }
+.block_trainingpathways .tp-block-target.ok      { color: #6c757d; }
+
+/* View button */
+.block_trainingpathways .tp-block-btn {
+    display: block;
+    width: 100%;
+    padding: 0.4rem 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #1565c0;
+    background: #1565c0;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.12s;
+}
+.block_trainingpathways .tp-block-btn:hover {
+    background: #0d47a1;
+    border-color: #0d47a1;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Empty / not-installed state */
+.block_trainingpathways .tp-block-empty {
+    text-align: center;
+    padding: 1.25rem 0.5rem;
+    color: #868e96;
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+.block_trainingpathways .tp-block-empty-icon {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+/* Completed state highlight */
+.block_trainingpathways .tp-block-complete-banner {
+    margin-top: 0.5rem;
+    background: #e8f5e9;
+    border-radius: 4px;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.78rem;
+    color: #1b5e20;
+    font-weight: 600;
+    text-align: center;
+}

@@ -32,3 +32,5 @@ $string['stage_complete']    = 'Complete';
 $string['stage_inprogress']  = 'In Progress';
 $string['stage_notstarted']  = 'Not Started';
 $string['not_installed']     = 'The Training Pathways plugin is not installed.';
+
+$string['privacy:metadata'] = 'The block_trainingpathways plugin does not store any personal data.';

@@ -33,11 +33,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'block_trainingpathways';
-$plugin->version   = 2026060300;
-$plugin->requires  = 2022041900;
-$plugin->supported  = [400, 500];
+$plugin->version   = 2026101201;
+$plugin->requires  = 2024042200;
+$plugin->supported  = [404, 502];
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = '1.0.1';
+$plugin->release   = '1.0.2';
 $plugin->dependencies = [
-    'local_trainingpathways' => 2026060100,
+    'local_trainingpathways' => 2026101201,
 ];
